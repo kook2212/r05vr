@@ -30,7 +30,8 @@
             z-index: 1000;
         }
         .loading-screen .logo {
-            width: 300px; /* 調整這裡的寬度以適應新圖片 */
+            /* 修改logo寬度 */
+            width: 500px; /* 根据需要调整 */
             height: auto;
             margin-bottom: 20px;
         }
@@ -45,6 +46,13 @@
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+        .loading-screen .text {
+            /* 添加紫色文字样式 */
+            color: #800080; /* 紫色 */
+            font-size: 24px; /* 根据需要调整字体大小 */
+            margin-bottom: 20px;
+            text-align: center;
         }
         .game-container {
             position: absolute;
@@ -67,9 +75,11 @@
     <div class="loading-screen">
         <img class="logo" src="https://i.postimg.cc/BnVjVVcs/bannerr0501-removebg-preview.png" alt="Logo">
         <div class="spinner"></div>
+        <!-- 添加紫色文字 -->
+        <div class="text">即將進入另一個世界<元宇宙></div>
     </div>
     <div class="game-container">
-        <iframe src="https://www.spatial.io/embed/hklss-R05-Yuan-Yu-Zhou-6655f74ec09ba33407260ef0?share=7205130941904465268&autoplay=1&enableRtc=1"
+        <iframe src="https://www.spatial.io/embed/hklss-R05-Yuan-Yu-Zhou-6655f74ec09ba33407260ef0?share=7205130941904465268&autoplay=1&enableRtc=1" 
             allow="camera; fullscreen; autoplay; display-capture; microphone; clipboard-write"></iframe>
     </div>
 
