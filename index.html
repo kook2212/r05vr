@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>路仔元宇宙世界</title>
+    <!-- 引入Google Fonts的Orbitron字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body, html {
             margin: 0;
@@ -15,65 +17,27 @@
             align-items: center;
             background-color: #000;
             color: #fff;
+            font-family: 'Orbitron', sans-serif; /* 使用Orbitron字体 */
         }
-        .loading-screen {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #000;
-            z-index: 1000;
-        }
-        .loading-screen .logo {
-            width: 300px; /* 保持原始大小 */
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .loading-screen .spinner {
-            border: 16px solid #f3f3f3;
-            border-top: 16px solid #3498db;
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            animation: spin 2s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+        /* 其他样式保持不变 */
+
         .loading-screen .text {
-            color: #800080; /* 紫色文字 */
+            /* 将文字颜色改为珊瑚色 */
+            color: #FF7F50; /* 珊瑚色 */
             font-size: 24px; /* 根据需要调整字体大小 */
             margin-bottom: 20px;
             text-align: center;
+            font-family: 'Orbitron', sans-serif; /* 使用Orbitron字体 */
         }
-        .game-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .game-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+        /* 其他样式保持不变 */
     </style>
 </head>
 <body>
     <div class="loading-screen">
         <img class="logo" src="https://i.postimg.cc/BnVjVVcs/bannerr0501-removebg-preview.png" alt="Logo">
         <div class="spinner"></div>
-        <div class="text">即將帶你進入另一個世界<元宇宙世界></div> <!-- 添加紫色文字 -->
+        <!-- 紫色文字改为珊瑚色 -->
+        <div class="text">即將進入元宇宙世界</div>
     </div>
     <div class="game-container">
         <iframe src="https://www.spatial.io/embed/hklss-R05-Yuan-Yu-Zhou-6655f74ec09ba33407260ef0?share=7205130941904465268&autoplay=1&enableRtc=1" 
